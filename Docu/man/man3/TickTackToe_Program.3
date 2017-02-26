@@ -1,0 +1,113 @@
+.TH "TickTackToe.Program" 3 "Sun Feb 26 2017" "Version 1.0.0" "TicTacToe" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TickTackToe.Program \- Main Class  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBMain\fP (string[] args)"
+.br
+.RI "Start game update loop "
+.ti -1c
+.RI "static void \fBdrawGame\fP ()"
+.br
+.RI "Draws game or win screen Sets game title "
+.ti -1c
+.RI "static void \fBHandleInput\fP ()"
+.br
+.RI "Handles player input "
+.ti -1c
+.RI "static void \fBdrawField\fP ()"
+.br
+.RI "Prints the field to the console Starts at Position 0/0 Does not clear console! "
+.ti -1c
+.RI "static void \fBdrawWin\fP (bool? winner)"
+.br
+.RI "Draws win screen "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBGame\fP \fBg\fP = new \fBGame\fP()"
+.br
+.RI "Current game\&. Starts new game at startup\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main Class 
+
+
+.PP
+Definition at line 13 of file Program\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static void TickTackToe\&.Program\&.drawField ()\fC [static]\fP"
+
+.PP
+Prints the field to the console Starts at Position 0/0 Does not clear console! 
+.PP
+Definition at line 155 of file Program\&.cs\&.
+.SS "static void TickTackToe\&.Program\&.drawGame ()\fC [static]\fP"
+
+.PP
+Draws game or win screen Sets game title 
+.PP
+Definition at line 82 of file Program\&.cs\&.
+.SS "static void TickTackToe\&.Program\&.drawWin (bool? winner)\fC [static]\fP"
+
+.PP
+Draws win screen 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwinner\fP false: Player 1 is winner true: Player 2 is winner null: Draw
+.RE
+.PP
+
+.PP
+Definition at line 188 of file Program\&.cs\&.
+.SS "static void TickTackToe\&.Program\&.HandleInput ()\fC [static]\fP"
+
+.PP
+Handles player input 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconsoleKeyInfo\fP ENTER / SPACEBAR: Place marker on board ARROW / WASD / NUMPAD: Move cursor F5 Start new game
+.RE
+.PP
+
+.PP
+Definition at line 103 of file Program\&.cs\&.
+.SS "static void TickTackToe\&.Program\&.Main (string [] args)\fC [static]\fP"
+
+.PP
+Start game update loop 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIargs\fP 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file Program\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGame\fP TickTackToe\&.Program\&.g = new \fBGame\fP()\fC [static]\fP"
+
+.PP
+Current game\&. Starts new game at startup\&. 
+.PP
+Definition at line 18 of file Program\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TicTacToe from the source code\&.

@@ -1,0 +1,165 @@
+.TH "TickTackToe.Game" 3 "Sun Feb 26 2017" "Version 1.0.0" "TicTacToe" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TickTackToe.Game \- \fBGame\fP logic for tic tac toe game  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBSetMarker\fP ()"
+.br
+.RI "Places marker of the current player at current cursor position "
+.ti -1c
+.RI "void \fBMoveCursor\fP (int x, int y)"
+.br
+.RI "Moves the cursor by increment of 1 in x / y direction "
+.ti -1c
+.RI "bool \fBGetWinner\fP ()"
+.br
+.RI "Checks if a player has won and returns that player "
+.ti -1c
+.RI "void \fBCheckGameStatus\fP ()"
+.br
+.RI "Checks if the game is won by either player and sets the winner property if winner is found\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrentPlayer\fP = false"
+.br
+.ti -1c
+.RI "int [][] \fBwinnables\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "char [] \fBplayerSymbols\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool [,] \fBfield\fP = { 'X', 'O', ' ' }\fC [get]\fP"
+.br
+.ti -1c
+.RI "int [] \fBcursor\fP = new bool?[3, 3]\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBwinner\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "bool \fBisGameRunning\fP = null\fC [get]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBGame\fP logic for tic tac toe game 
+
+
+.PP
+Definition at line 8 of file Game\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void TickTackToe\&.Game\&.CheckGameStatus ()"
+
+.PP
+Checks if the game is won by either player and sets the winner property if winner is found\&. 
+.PP
+Definition at line 80 of file Game\&.cs\&.
+.SS "bool TickTackToe\&.Game\&.GetWinner ()"
+
+.PP
+Checks if a player has won and returns that player 
+.PP
+\fBReturns:\fP
+.RS 4
+The winning player\&. Has no value when no player has won\&.
+.RE
+.PP
+
+.PP
+Definition at line 70 of file Game\&.cs\&.
+.SS "void TickTackToe\&.Game\&.MoveCursor (int x, int y)"
+
+.PP
+Moves the cursor by increment of 1 in x / y direction 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP Move the x position
+.br
+\fIy\fP Move the y position
+.RE
+.PP
+.PP
+Does nothing if x or y are more than 1 / -1 or would move the cursor outside of the field
+.PP
+Definition at line 54 of file Game\&.cs\&.
+.SS "bool TickTackToe\&.Game\&.SetMarker ()"
+
+.PP
+Places marker of the current player at current cursor position 
+.PP
+\fBReturns:\fP
+.RS 4
+false if already a marker at cursor position or game is won, true otherwise
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Game\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool TickTackToe\&.Game\&.currentPlayer = false"
+
+.PP
+Definition at line 15 of file Game\&.cs\&.
+.SS "int [][] TickTackToe\&.Game\&.winnables"
+\fBInitial value:\fP
+.PP
+.nf
+=
+        {
+            new int[]{0,1,2}, 
+            new int[]{3,4,5},
+            new int[]{6,7,8},
+            new int[]{0,3,6}, 
+            new int[]{1,4,7},
+            new int[]{2,5,8},
+            new int[]{0,4,8}, 
+            new int[]{2,4,6}
+        }
+.fi
+.PP
+Definition at line 19 of file Game\&.cs\&.
+.SH "Property Documentation"
+.PP 
+.SS "int [] TickTackToe\&.Game\&.cursor = new bool?[3, 3]\fC [get]\fP"
+
+.PP
+Definition at line 13 of file Game\&.cs\&.
+.SS "bool [,] TickTackToe\&.Game\&.field = { 'X', 'O', ' ' }\fC [get]\fP"
+
+.PP
+Definition at line 12 of file Game\&.cs\&.
+.SS "bool TickTackToe\&.Game\&.isGameRunning = null\fC [get]\fP"
+
+.PP
+Definition at line 17 of file Game\&.cs\&.
+.SS "char [] TickTackToe\&.Game\&.playerSymbols\fC [get]\fP"
+
+.PP
+Definition at line 10 of file Game\&.cs\&.
+.SS "bool TickTackToe\&.Game\&.winner\fC [get]\fP"
+
+.PP
+Definition at line 16 of file Game\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TicTacToe from the source code\&.
