@@ -5,6 +5,6 @@ We were required to write a program using arrays in c# and write a documentation
 
 To view the "Assay" (German) I had to write click here: [Link will be added shortly]
 
-To view the Docs click here: [Link will be added shortly]
+To view the Docs click here: [https://xenira.github.io/school-tic-tac-toe/Docu/html/annotated.html](https://xenira.github.io/school-tic-tac-toe/Docu/html/annotated.html)
 
 To see a cute puppy click here: [Cute Puppy](http://my10online.com/wp-content/uploads/2011/09/cute_puppy-5312.jpg)
