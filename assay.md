@@ -1,3 +1,5 @@
+## THIS IS THE WEB VERSION! PLEASE DOWNLOAD THE FULL VERSION [HERE](https://xenira.github.io/school-tic-tac-toe/Array_Programmierung.docx)
+
 # 1. Inhalt
 
 | Number | Title |
