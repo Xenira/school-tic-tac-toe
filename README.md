@@ -3,7 +3,7 @@ We were required to write a program using arrays in c# and write a documentation
 
 ---
 
-To view the "Assay" (German) I had to write click here: [Link will be added shortly]
+To view the "Assay" (German) I had to write click here: [Download](https://xenira.github.io/school-tic-tac-toe/Array_Programmierung.docx)
 
 To view the Docs click here: [https://xenira.github.io/school-tic-tac-toe/Docu/html/annotated.html](https://xenira.github.io/school-tic-tac-toe/Docu/html/annotated.html)
 
